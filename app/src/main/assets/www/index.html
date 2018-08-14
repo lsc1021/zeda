@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jingle.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/template.min.js"></script>
+    <script type="text/javascript" src="js/Jingle.debug.js"></script>
+    <!---PC端测试时需要这个文件，将click事件模拟成touch事件，正式上线删除该js文件即可--->
+    <script type="text/javascript" src="js/zepto.touch2mouse.js"></script>
+</head>
+<body>
+<div id="section_container">
+    <section id="index_section" class="active">
+        <header>
+            <h1 class="title">ZedaSmart</h1>
+            <nav class="right">
+                <a data-target="section" data-icon="iconfont icon-message" href="#about_section"></a>
+            </nav>
+        </header>
+        <footer>
+            <a  href="#layout_home" data-target="article" data-icon="iconfont icon-home" class="active">首页</a>
+            <a  href="#layout_alarm" data-target="article" data-icon="iconfont icon-alarm">报警</a>
+            <a  href="#layout_workbench" data-target="article" data-icon="iconfont icon-workbench">工作台</a>
+            <a  href="#layout_application" data-target="article" data-icon="iconfont icon-application">应用</a>
+            <a  href="#layout_wo" data-target="article" data-icon="iconfont icon-wo">我</a>
+        </footer>
+        <article class="active" id="layout_home">
+            欢迎来到首页
+        </article>
+        <article id="layout_alarm">
+            欢迎来到报警
+        </article>
+        <article id="layout_workbench">
+            欢迎来到工作台
+        </article>
+        <article id="layout_application">
+            欢迎来到应用
+        </article>
+        <article id="layout_wo">
+            欢迎来到我
+        </article>
+    </section>
+</div>
+</body>
+<script>
+    Jingle.launch();
+</script>
+</html>
